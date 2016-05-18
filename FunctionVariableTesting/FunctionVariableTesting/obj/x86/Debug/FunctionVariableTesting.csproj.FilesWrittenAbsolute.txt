@@ -1,0 +1,5 @@
+/Users/Tyrite/Projects/untitled folder/Scripting1600/FunctionVariableTesting/FunctionVariableTesting/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/Tyrite/Projects/untitled folder/Scripting1600/FunctionVariableTesting/FunctionVariableTesting/bin/Debug/FunctionVariableTesting.exe.mdb
+/Users/Tyrite/Projects/untitled folder/Scripting1600/FunctionVariableTesting/FunctionVariableTesting/bin/Debug/FunctionVariableTesting.exe
+/Users/Tyrite/Projects/untitled folder/Scripting1600/FunctionVariableTesting/FunctionVariableTesting/obj/x86/Debug/FunctionVariableTesting.exe
+/Users/Tyrite/Projects/untitled folder/Scripting1600/FunctionVariableTesting/FunctionVariableTesting/obj/x86/Debug/FunctionVariableTesting.exe.mdb
