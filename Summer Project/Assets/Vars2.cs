@@ -12,7 +12,7 @@ public class Vars2 : MonoBehaviour {
 	float wabrebot = 2.5f;
 	float weakbot = 5.678f;
 
-	string potion = " Potion of ";
+	string potion = "Potion of ";
 	string splash = "Splash ";
 	string night = "Night Vision ";
 	string water = "Water Breathing ";
