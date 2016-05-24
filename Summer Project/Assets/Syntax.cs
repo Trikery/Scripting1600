@@ -12,7 +12,7 @@ public class Syntax : MonoBehaviour{
 		//functions are things than do things.  Functions Names start with Capitalized Letter.
 		return _i + _j;
 	}
-	//Arguments are the same and Parameters as refering to functions
+	//Arguments are like parameters but are defined withing the function later, rather than within the parantheses.
 	int MyIntBy2 (int _i, int _j){
 		int _k = (_i + _j)*2;
 		return _k;
