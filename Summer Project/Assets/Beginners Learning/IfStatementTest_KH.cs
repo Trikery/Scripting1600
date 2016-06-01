@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 // a convention is how you write the file name i.e. Project_Portion_User.cs etc.
-public class TestMay31 : MonoBehaviour {
+public class IfStatementTest_KH : MonoBehaviour {
 	float feets = 30.5f;
 	string inch = "In Inches: ";
 	string yard = "In Yards: ";
