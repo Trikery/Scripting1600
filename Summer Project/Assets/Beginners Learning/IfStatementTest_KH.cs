@@ -21,7 +21,9 @@ public class IfStatementTest_KH : MonoBehaviour {
 	}
 	float FeetEqualMile (float feet){
 		float mile = feet / 5280;
-		return mile;	
+		return mile;	s
+
+		// Use this code at a later time
 		/*if (mile < 1) {
 			print (notMile);
 		} else
