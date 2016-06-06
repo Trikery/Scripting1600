@@ -22,6 +22,9 @@ public class IfStatementTest_KH : MonoBehaviour {
 	float FeetEqualMile (float feet){
 		float mile = feet / 5280;
 		return mile;	
+		//it is unfair to myself to expect that I will be able to do half of what Ian can do in only one semester
+		//I should rather take my time understanding the information and learning the code.
+		//Be lessn critical of myself, for not understanding it like I do Math, Art, Biology, Physics, and any of my other strong suits. 
 		/*if (mile < 1) {
 			print (notMile);
 		} else
