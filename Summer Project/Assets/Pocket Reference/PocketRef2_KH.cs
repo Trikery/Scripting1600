@@ -3,9 +3,14 @@ using System.Collections;
 
 public class PocketRef2_KH : MonoBehaviour {
 
+	public int myInt;
+	public string operation;
+
 	void Main (){
-		print (FeetToInches(20));
-		print (FeetToInches(50));
+		if (operation == "multipy")
+			print (FeetToInches (myInt));
+		else
+			print ("You're so Stupid!");
 	
 	}
 	int FeetToInches (int feet){
