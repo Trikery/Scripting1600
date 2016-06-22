@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Scope_Test : MonoBehaviour {
+public class Scope_Test{
 	private int apples;
 	private int oranges;
 	public int grapes;

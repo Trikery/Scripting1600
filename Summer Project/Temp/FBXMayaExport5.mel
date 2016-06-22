@@ -1,0 +1,23 @@
+print "Starting maya loading and fbx conversion \n";
+	
+if (`file -q -exists "/Users/Tyrite/Projects/Unity Game Design/Scripting1600/Summer Project/Assets/ballo.mb"`)
+{		
+	file -o "/Users/Tyrite/Projects/Unity Game Design/Scripting1600/Summer Project/Assets/ballo.mb";
+	FBXExportEmbeddedTextures -v false;
+	// FBXExportHardEdges -v true;
+	FBXExportApplyConstantKeyReducer -v false;
+	FBXExportShowUI -v false;
+
+	print "Before fbx export\n";
+	FBXExport -f "/Users/Tyrite/Projects/Unity Game Design/Scripting1600/Summer Project/Temp/ExportedFBXFile.fbx";
+	print "after fbx export\n";
+}
+else
+	print "Could not open Maya file.";
+
+
+system ("rm \"/Users/Tyrite/Projects/Unity Game Design/Scripting1600/Summer Project/Temp/CommandPipe\"");
+
+$donepipeKill = `fopen "/Users/Tyrite/Projects/Unity Game Design/Scripting1600/Summer Project/Temp/SyncPipeKill" "w"`;
+fwrite $donepipeKill "Done";
+fclose $donepipeKill;

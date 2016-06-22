@@ -11,7 +11,6 @@ public class Scope_Use : MonoBehaviour {
 	void OnMouseDown () {
 		MyFruit = new Scope_Test ();
 		MyFruit.AddApples (newApples);
-		MyFruit.AddApples (newApples);
 		MyFruit.AddOrange (newOranges);
 		MyFruit.grapes = newGrapes;
 
