@@ -4,7 +4,6 @@ using System.Collections;
 public class FlashCards : MonoBehaviour {
 		void Main() {
 			int intValue = 10;
-			float floatValue = 30.5f;
 			string stringValue = "A String is ";
 
 		print (stringValue + FloatTimesTwelve (intValue));

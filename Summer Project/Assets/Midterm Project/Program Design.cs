@@ -35,11 +35,15 @@ Uses Instances and references (Object Oriented)
 
 Use short code. Less lines the better!
 
-Enum's or Arrays?
-Character Select: Cotton, Silk, Denim
-PowerUp Select: Frosty Fruit, Firey Fruit, Adreno Fruit.
-	Frosty Fruit:  Extra HP.   Firey Fruit:  Extra Attack Power,  Adreno Fruit:  Attack Twice?
-Enemy Select: cthulian, carnisaur, wolfas
+use an enum to make this:
+	Character Select: Cotton, Silk, Denim
+	PowerUp Select: Frosty Fruit, Firey Fruit, Adreno Fruit.
+				 - Frosty Fruit:  Extra HP.   Firey Fruit:  Extra Attack Power,  Adreno Fruit:  Attack Twice?
+	Enemy Select: cthulian, carnisaur, wolfas
+
+	Character Stats:  HP & Attack
+	Enemy Stats:  HP & Attack
+	Power Up Stats:  set value.
 
 Reference Character Stat, Enemy Stats, and Item Stats
 Click object to begin the fight.
@@ -49,6 +53,8 @@ List Character Stats.  Attack and HP
 List Character's New Stats
 "A ____ Appeared"
 List Enemy HP.
+
+
 
 "@p Attacks!"
 print new Enemy HP.

@@ -5,8 +5,8 @@ public class IfStatementTest_KH : MonoBehaviour {
 	float feets = 30.5f;
 	string inch = "In Inches: ";
 	string yard = "In Yards: ";
-	string miles = "In Miles: ";
-	string notMile = "Value is less than one mile.";
+	/*string miles = "In Miles: ";
+	string notMile = "Value is less than one mile.";*/
 	void Main() {
 		print (inch + FeetToInches (feets));
 		print (yard + FeetToYard (feets));

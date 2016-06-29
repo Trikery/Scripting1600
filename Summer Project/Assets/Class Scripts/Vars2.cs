@@ -8,9 +8,9 @@ public class Vars2 : MonoBehaviour {
 	int po3 = 30;
 	int gunpow = 5;
 
-	float nightbot = 0.5f;
+	/*float nightbot = 0.5f;
 	float wabrebot = 2.5f;
-	float weakbot = 5.678f;
+	float weakbot = 5.678f;*/
 
 	string potion = "Potion of ";
 	string splash = "Splash ";

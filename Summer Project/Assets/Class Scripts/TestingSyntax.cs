@@ -19,9 +19,7 @@ public class TestingSyntax : MonoBehaviour {
 	}
 	int Minus (int no1, int no2){
 		int no4 = no1 - no2;
-		int no5 = no2 - no1;
 		return no4;
-		return no5;
 	}
 
 	void Start () {
