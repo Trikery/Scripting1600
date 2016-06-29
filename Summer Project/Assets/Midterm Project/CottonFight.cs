@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+[System.Serializable]
 
 public class CottonFight{
 
@@ -10,3 +11,12 @@ public class CottonFight{
 	}
 
 
+
+/*             ----> PowerUps ----->
+ * CottonFight 						 ObjectValues -----> BattleOperations -----> BattleSequence
+			   -------------------->
+
+			   --> Define PowerUp -> 
+Define Choices                       Define Stats --> Calculate Turn Results --> Initiate Battle Sequence
+Make Decisions -------------------->
+*/

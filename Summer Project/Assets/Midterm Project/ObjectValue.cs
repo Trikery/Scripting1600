@@ -1,89 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
+[System.Serializable]
 
 public class ObjectValue{							
 	public CottonFight choice;
+	public PowerUp powerUp;
 
 
 	public CottonFight.Characters characterSelect;  //creates a variable to reference the Character Selection, Enemy, and Power Up
 	public CottonFight.Enemies enemySelect;
-	public CottonFight.PowerUps powerUpSelect;
-
-
-	/*												//Oh shoot...  These Variables were written to help determine the value of the HP based on which powerup had been taken.
-	int HpPowerUp (){
-		int value = HeroLife () + 20;				//Without these the Program won't work properly, and Cotton, Silk, and Denim will be slaughtered!
-		return value;
-	}												//Note:  Add the secondary case scenario's before wednesday.  aka when I get home.
-													
-													 * switch (powerUpSelect){
-													 * case CottonFight.PowerUps.FireyFruit:
-													 * value = value + 20;													
-													 * ... HeroHP () or HeroPower ()																										 
-													 * break;
-													 * }
-													 * switch (powerUpSelect){
-													 * case CottonFight.PowerUps.FrostyFruit:
-													 * value = value + 20;													
-													 * ... HeroHP () or HeroPower ()																										 
-													 * break;
-													 * }
-													 * 
-													 *
-													 //insert
-
-
-	int AttackPowerUp (){
-		int value = HeroPower () + 20;
-		return value;
-	}
-	*/
 
 
 	public int HeroHP (){							//Based on switch of the number this function should determine the value of the heroes HP
-		int value = 0;
-		//if (powerUpSelect = CottonFight.PowerUps.FireyFruit) {
+		int value = powerUp.PowerUpLife();
 			switch (characterSelect) {
 			case CottonFight.Characters.Cotton:
-				value = 80;
+			value = value + 80;
 				break;
 			case CottonFight.Characters.Silk:
-				value = 90;
+			value = value + 90;
 				break;
 			case CottonFight.Characters.Denim:
-				value = 60;
+			value = value + 60;
 				break;
 			}
-		//}
-		/*else if (CottonFight.PowerUps == CottonFight.PowerUps.FrostyFruit){
-			switch (characterSelect) {
-			case CottonFight.Characters.Cotton:
-				value = 80;
-				break;
-			case CottonFight.Characters.Silk:
-				value = 90;
-				break;
-			case CottonFight.Characters.Denim:
-				value = 60;
-				break;
-			}*/
-		//}
-		//else
 		return value;
 	}
 
 
 	public int HeroPower (){						//Based on switch of the number this function should determine the value of the hero's Power
-		int value = 0;
+		int value = powerUp.PowerUpAttack();
 	switch (characterSelect) {
 		case CottonFight.Characters.Cotton:
-			value = 50;
+			value = value + 50;
 			break;
 		case CottonFight.Characters.Silk:
-			value = 30;
+			value = value + 30;
 			break;
 		case CottonFight.Characters.Denim:
-			value = 60;
+			value = value + 60;
 			break;
 		}
 		return value;
@@ -104,7 +59,7 @@ public class ObjectValue{
 		return value;
 	}
 
-	public int EnemyPower (){						//Based on switch of the number this function should determine the value of the enemy's Power
+	public int EnemyPower (){						//Based on switch of the number this function should 
 		int value = 0;
 		switch (enemySelect) {
 		case CottonFight.Enemies.Cthulian:
@@ -138,4 +93,5 @@ public class ObjectValue{
  * Denim
  * 	firey fruit > Cthulian 	> frosty fruit
  * 	firey fruit > Carnisaur < frosty fruit		Defeats Carnisaur either way
- * 	firey fruit >  Wolfas 	< frosty fruit		Defeats Wolfas either way */
+ * 	firey fruit >  Wolfas 	< frosty fruit		Defeats Wolfas either way 
+ */

@@ -1,4 +1,6 @@
-﻿[System.Serializable]
+﻿using UnityEngine;
+using System.Collections;
+[System.Serializable]
 
 public class BattleOperation{
 	public ObjectValue values;
