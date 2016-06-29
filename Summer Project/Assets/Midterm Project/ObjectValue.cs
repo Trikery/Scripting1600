@@ -12,7 +12,7 @@ public class ObjectValue{
 
 	/*												//Oh shoot...  These Variables were written to help determine the value of the HP based on which powerup had been taken.
 	int HpPowerUp (){
-		int value = HeroLife () + 20;					//Without these the Program won't work properly, and Cotton, Silk, and Denim will be slaughtered!
+		int value = HeroLife () + 20;				//Without these the Program won't work properly, and Cotton, Silk, and Denim will be slaughtered!
 		return value;
 	}												//Note:  Add the secondary case scenario's before wednesday.  aka when I get home.
 													
@@ -42,17 +42,33 @@ public class ObjectValue{
 
 	public int HeroHP (){							//Based on switch of the number this function should determine the value of the heroes HP
 		int value = 0;
-		switch (characterSelect) {
-		case CottonFight.Characters.Cotton:
-			value = 80;
-			break;
-		case CottonFight.Characters.Silk:
-			value = 90;
-			break;
-		case CottonFight.Characters.Denim:
-			value = 60;
-			break;
-		}
+		//if (powerUpSelect = CottonFight.PowerUps.FireyFruit) {
+			switch (characterSelect) {
+			case CottonFight.Characters.Cotton:
+				value = 80;
+				break;
+			case CottonFight.Characters.Silk:
+				value = 90;
+				break;
+			case CottonFight.Characters.Denim:
+				value = 60;
+				break;
+			}
+		//}
+		/*else if (CottonFight.PowerUps == CottonFight.PowerUps.FrostyFruit){
+			switch (characterSelect) {
+			case CottonFight.Characters.Cotton:
+				value = 80;
+				break;
+			case CottonFight.Characters.Silk:
+				value = 90;
+				break;
+			case CottonFight.Characters.Denim:
+				value = 60;
+				break;
+			}*/
+		//}
+		//else
 		return value;
 	}
 
