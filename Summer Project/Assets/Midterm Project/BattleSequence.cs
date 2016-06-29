@@ -7,19 +7,19 @@ public class BattleSequence : MonoBehaviour {
 
 
 	void OnMouseDown(){
+		int heroLife = lifeStart.HeroHP ();
+		int enemyLife = lifeStart.EnemyHP ();
 
-		int enemylife = turns.HeroAttacks ();												//makes functions variables
-		int herolife = turns.EnemyAttacks ();
 
-		print ("The Hero's HP is " + herolife);												//first prints the HP's of the Enemies
-		print ("The Enemy's HP is " + enemylife);
+		print ("The Hero's HP is " + heroLife);											//first prints the HP's of the Enemies
+		print ("The Enemy's HP is " + enemyLife);
 		turns.HeroAttacks ();
 
-		print ("The Hero deals Damage to Enemy.  The Enemy has " + enemylife + " HP");
+		print ("The Hero deals Damage to Enemy.  The Enemy has " + heroAttack + " HP");
 
-		if (enemylife >= 0) { 																//loop begins until the enemy is defeated
-			turns.EnemyAttacks();
-																		//if statement that determines that the hero won.  the break is used to end the loop.  I hope.
+		if (heroLife >= 0) { 																//loop begins until the enemy is defeated
+			 turns.EnemyAttacks();
+																							//if statement that determines that the hero won.  the break is used to end the loop.  I hope.
 		} else 
 		{
 			print ("The Hero has defeated the Enemy!  Congratuations!  You Win");
