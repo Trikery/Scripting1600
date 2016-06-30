@@ -5,6 +5,8 @@ public class ExampleScript_B : MonoBehaviour {
 
 	public int weapon = 0;
 	public string weaponName;
+
+	public int enemyDistance;
 			
 	void Update()
 	{
@@ -12,6 +14,7 @@ public class ExampleScript_B : MonoBehaviour {
 		{
 			WeaponSearch ();
 			DisplayMessage ();
+			EnemySearch ();
 		}
 
 	}
@@ -48,8 +51,25 @@ public class ExampleScript_B : MonoBehaviour {
 		{
 			print ("You Found The " + weaponName + "!");
 		}
-
 	}
+	void EnemySearch (){
+		for (int i = 0; i < 5; i++) {
+			enemyDistance = Random.Range (1, 10);
+			if (enemyDistance >= 8) 
+			{
+				print ("The Enemy is still far away");
+			}
+			if(enemyDistance >= 4 && enemyDistance <= 7)
+				{
+					print ("The Enemy is getting close");	
+				}
+			if (enemyDistance < 4) 
+			{
+				print ("The Enemy is Right on Top of YOU!!!");
+			}
+		}
 
+	
+	}
 }
 		

@@ -15,13 +15,13 @@ public class ObjectValue{
 		int value = powerUp.PowerUpLife();
 			switch (characterSelect) {
 			case CottonFight.Characters.Cotton:
-			value = value + 80;
+			value = value + 60;
 				break;
 			case CottonFight.Characters.Silk:
-			value = value + 90;
+			value = value + 80;
 				break;
 			case CottonFight.Characters.Denim:
-			value = value + 60;
+			value = value + 40;
 				break;
 			}
 		return value;
@@ -32,13 +32,13 @@ public class ObjectValue{
 		int value = powerUp.PowerUpAttack();
 	switch (characterSelect) {
 		case CottonFight.Characters.Cotton:
-			value = value + 50;
+			value = value + 70;
 			break;
 		case CottonFight.Characters.Silk:
-			value = value + 30;
+			value = value + 40;
 			break;
 		case CottonFight.Characters.Denim:
-			value = value + 60;
+			value = value + 80;
 			break;
 		}
 		return value;
@@ -47,13 +47,13 @@ public class ObjectValue{
 		int value = 0;
 		switch (enemySelect) {
 		case CottonFight.Enemies.Cthulian:
-			value = 80;
+			value = 90;
 			break;
 		case CottonFight.Enemies.Carnisaur:
-			value = 70;
+			value = 100;
 			break;
 		case CottonFight.Enemies.Wolfas:
-			value = 60;
+			value = 80;
 			break;
 		}
 		return value;
@@ -76,22 +76,3 @@ public class ObjectValue{
 	}
 
 }
-
-
-
-/*  Battle Results
- * Cotton
- * 	firey fruit < Cthulian 	< frosty fruit
- * 	firey fruit > Carnisaur < frosty fruit		Defeats Carnisaur either way
- * 	firey fruit <  Wolfas 	< frosty fruit
- * 
- * Silk
- * 	firey fruit > Cthulian 	> frosty fruit
- * 	firey fruit > Carnisaur > frosty fruit
- * 	firey fruit <  Wolfas 	< frosty fruit
- * 
- * Denim
- * 	firey fruit > Cthulian 	> frosty fruit
- * 	firey fruit > Carnisaur < frosty fruit		Defeats Carnisaur either way
- * 	firey fruit >  Wolfas 	< frosty fruit		Defeats Wolfas either way 
- */
