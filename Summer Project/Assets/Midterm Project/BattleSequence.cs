@@ -5,6 +5,8 @@ public class BattleSequence : MonoBehaviour {
 	public BattleOperation turns;
 	public ObjectValue lifeStart;
 
+	int whatTreasure;
+
 	void Start (){
 		print ("You Have Three Heroes to Choose From.");
 		string[]heroes = new string[3];
@@ -20,17 +22,9 @@ public class BattleSequence : MonoBehaviour {
 		items [1] = "Frosty Fruit gives a +20 HP Bonus";
 		foreach (string item in items) {
 			print (item);
+			print ("You must pick a monster to face off against");
+			print ("click the pill to begin");
 		}
-		print ("You must pick a monster to face off against");
-		string[] monsters = new string[3];
-		monsters[0] = "Cthulian";
-		monsters[1] = "Carnisaur";
-		monsters[2] = "Wolfas";
-		foreach (string monster in monsters) {
-			print (monster);
-		}
-		print ("click the pill to begin");
-	
 	}
 
 
@@ -61,8 +55,41 @@ public class BattleSequence : MonoBehaviour {
 		{
 			print ("The Hero has defeated the Enemy!");
 			print ("You Win!");
+			print ("Press Space to Get Your Treasure!");
 		}
-	} 
+	}
+
+
+
+	public void GetTreasure (){
+		for (int i = 0; i < 1; i++) {
+			whatTreasure = Random.Range (1, 10);
+			if (whatTreasure < 2) 
+				print ("The Chest was Empty");
+			if (whatTreasure >= 2 && whatTreasure < 4)
+				print ("You Found the Pig Wings!");
+			if (whatTreasure >= 4 && whatTreasure < 6)
+				print ("You Found SabuellaSteve!");
+			if (whatTreasure >= 6 && whatTreasure < 8)
+				print ("You Found an AdrenoFruit!");
+			if (whatTreasure >= 8)
+				print ("You Found the Dragon's Eye!");
+			else {
+			}
+
+
+		}
+
+	}
+
+	void Update (){
+		if (Input.GetKeyUp ("space")) {
+			GetTreasure ();
+
+		} else {
+		}
+	
+	}
 }
 
 
