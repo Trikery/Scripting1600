@@ -22,9 +22,10 @@ public class BattleSequence : MonoBehaviour {
 		items [1] = "Frosty Fruit gives a +20 HP Bonus";
 		foreach (string item in items) {
 			print (item);
-			print ("You must pick a monster to face off against");
-			print ("click the pill to begin");
-		}
+			}
+		print ("You must pick a monster to face off against");
+		print ("click the pill to begin");
+
 	}
 
 
