@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/WeaponsFiring.unity
+- path: Assets/SummerProject.unity
   isLoaded: 1
   isActive: 1
