@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Loops_For : MonoBehaviour {
-	// for script exercise in C# Reference Guide
+
 	public float i = 0;
 
 	void OnMouseDown (){
