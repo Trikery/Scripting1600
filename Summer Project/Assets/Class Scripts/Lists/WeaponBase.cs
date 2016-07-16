@@ -13,8 +13,8 @@ namespace StudioThorn{
 
 		void OnMouseUp(){
 			if (myWeaponsInventory.myWeapons.Count < 2) {
-			myWeaponsInventory.myWeapons.Add (this);  //access Weap
-			gameObject.SetActive (false);  //
+			myWeaponsInventory.myWeapons.Add (this);
+			gameObject.SetActive (false);
 			}
 		}
 	}
