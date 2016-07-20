@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/WeaponsFiring.unity
+- path: Assets/Class Scripts/GameState/GameStatesLevel.unity
   isLoaded: 1
   isActive: 1
