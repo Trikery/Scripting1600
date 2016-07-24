@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Class Scripts/GameState/GameStatesLevel.unity
+- path: Assets/Personal Test/ProgramEight/MovementTestScene.unity
   isLoaded: 1
   isActive: 1
