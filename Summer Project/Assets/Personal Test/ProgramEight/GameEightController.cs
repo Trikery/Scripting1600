@@ -9,5 +9,6 @@ public class GameEightController : MonoBehaviour {
 	void FixedUpdate () {
 		PlayerMove.Move ();
 		StartCoroutine (EneMove.Mob ());
+
 	}
 }

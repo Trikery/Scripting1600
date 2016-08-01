@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Personal Test/Program Seven/CottonCharacterSelect.unity
+- path: Assets/Class Scripts/CharacterMovement/Mover.unity
   isLoaded: 1
   isActive: 1
