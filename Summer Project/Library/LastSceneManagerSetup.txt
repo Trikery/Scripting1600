@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/UnityTestTutorials/Classes/ClassesTestTutorial.unity
+- path: Assets/Personal Test/Program Seven/CottonCharacterSelect.unity
   isLoaded: 1
   isActive: 1
