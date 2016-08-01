@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Personal Test/ProgramEight/MovementTestScene.unity
+- path: Assets/UnityTestTutorials/Classes/ClassesTestTutorial.unity
   isLoaded: 1
   isActive: 1
