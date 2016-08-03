@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Class Scripts/GameState/GameStatesLevel.unity
+- path: Assets/Final Project/GamePlay.unity
   isLoaded: 1
   isActive: 1

@@ -13,14 +13,14 @@ public class BalloMove : MonoBehaviour {
 
 	void MoveHorizontal (float _myInput) 
 	{
-		moveVector.z = _myInput;
+		moveVector.x = _myInput;
 		moveVector = transform.TransformDirection (moveVector*moveSpeed*Time.deltaTime);
 		character.Move (moveVector);
 	}
 
 	void MoveVertical (float _myInput) 
 	{
-		moveVector.x = _myInput;
+		moveVector.z = _myInput;
 		moveVector = transform.TransformDirection (moveVector*moveSpeed*Time.deltaTime);
 		character.Move (moveVector);
 	}
