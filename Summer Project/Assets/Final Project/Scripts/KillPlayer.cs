@@ -3,9 +3,14 @@ using System.Collections;
 
 public class KillPlayer : MonoBehaviour {
 
-	//The Easy Way?
-	void OnTriggerEnter(){
+	void Kill (){
 		print ("You've Been Caught!!!  YOU ARE DEAD!!!");
 		transform.parent.gameObject.SetActive (false);
+
+	}
+
+	//The Easy Way?
+	void OnTriggerEnter(){
+		Kill ();
 	}
 }
