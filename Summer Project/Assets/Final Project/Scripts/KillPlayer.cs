@@ -11,6 +11,12 @@ public class KillPlayer : MonoBehaviour {
 
 	//The Easy Way?
 	void OnTriggerEnter(){
-		Kill ();
+		switch (PlayerStates.currentPlayerState) {
+		case PlayerStates.playerStates.flight: 
+			Kill ();
+			break;
+		case PlayerStates.playerStates.fight:
+			break;
+		}
 	}
 }

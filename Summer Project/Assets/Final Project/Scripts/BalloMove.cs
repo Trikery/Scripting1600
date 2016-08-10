@@ -5,7 +5,7 @@ public class BalloMove : MonoBehaviour {
 
 	private CharacterController character;
 	private Vector3 moveVector;
-	public float moveSpeed = 5;
+	public float moveSpeed = 3;
 
 	void Start () {
 		character = GetComponent<CharacterController> ();

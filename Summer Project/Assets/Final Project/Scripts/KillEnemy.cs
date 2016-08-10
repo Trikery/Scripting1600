@@ -3,13 +3,16 @@ using System.Collections;
 
 public class KillEnemy : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public PlayerInventory PillSubtraction;
+
+	void OnTriggerEnter () {
+		switch (PlayerStates.currentPlayerState) {
+		case PlayerStates.playerStates.fight:
+			transform.gameObject.SetActive (false);
+			PlayerInventory.i--;
+			EnemySpeedChange.enemiesKilled++;
+			PillSubtraction.PowerPills.RemoveAt (PlayerInventory.i);
+			break;
+		}
 	}
 }

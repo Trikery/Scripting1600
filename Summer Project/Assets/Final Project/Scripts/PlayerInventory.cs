@@ -6,9 +6,8 @@ public class PlayerInventory : MonoBehaviour {
 
 	public List<PowerUpGet> PowerPills = new List<PowerUpGet> ();
 
-	public static int i = -1;
-	// in order to kill an enemy Ballo must have a powerup in his inventory
-	//
+	public static int i = 0;
+
 	public void AddPowerPill (PowerUpGet _pill)
 	{
 		PowerPills.Add (_pill);
@@ -17,9 +16,8 @@ public class PlayerInventory : MonoBehaviour {
 	}
 
 	void Update (){
-		if (i >= 1 && i <= 3) {
+		if (i > 0) {
 			PlayerStates.currentPlayerState = PlayerStates.playerStates.fight;
-		} else if (i == 4) {
 		} else {
 			PlayerStates.currentPlayerState = PlayerStates.playerStates.flight;
 		}
