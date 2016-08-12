@@ -4,7 +4,7 @@ using System.Collections;
 public class GameOver : MonoBehaviour {
 
 	public GameObject retryButton;
-	int waitTime = 2;
+	int waitTime = 2;  //establish amount of time to wait before showing the button
 
 	IEnumerator RetryButtonAppear (){
 		while (waitTime > 0) {
@@ -14,7 +14,7 @@ public class GameOver : MonoBehaviour {
 		GameState.currentGameState = GameState.States.GameOver;
 			retryButton.SetActive (true);
 	}
-	void Start () {
+	void Start () {			//activate coroutine
 		StartCoroutine (RetryButtonAppear ());
 
 	}

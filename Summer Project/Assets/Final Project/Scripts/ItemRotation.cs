@@ -3,6 +3,8 @@ using System.Collections;
 
 public class ItemRotation : MonoBehaviour {
 
+	//basic script that makes the item rotate on the x and y axis.
+
 	public float rotateSpeed = 5f;
 
 	void Rotate () 
